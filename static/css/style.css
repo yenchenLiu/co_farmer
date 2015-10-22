@@ -1,0 +1,88 @@
+
+.home_page {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	height: 200px !important; 
+	width: 200px;
+}
+.produce-status{
+	margin-top: 20px;
+	float:right;
+	color: red;
+}
+
+.img-circle{
+	height: 150px;
+	width: 150px;
+}
+
+.img-thumbnail{
+	width: 230px;
+	height: 250px;
+	float:left;	
+}
+
+#feture_image{
+	width: 400px;
+	height: 400px;
+}
+.thumbnail{
+	height: 400px;
+}
+.produce_images{
+	width: 140px;
+	height: 140px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.produce_images2{
+	padding-top: 5px;
+}
+
+.header-background{
+	background: url(http://subtlepatterns.com/patterns/stardust.png);
+}
+.header-title{
+	color : #65A389;
+}
+.header-title2{
+	color : #206B4B;
+}
+.header-menu{
+	color : #569B7D;
+	border-color: #D2F1E4;
+	background-color: #D2F1E4;
+}
+.header-caret{
+	border-top-color: #569B7D !important; 
+	border-bottom-color:#569B7D !important; 
+}
+.btn-primary{
+	background-color: #579C7E;
+}
+.header-logo{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    height: 80px;
+    width: 100px;
+    margin-top: -25px;
+    margin-left: -75px;
+
+}
+.row{
+	margin-top: 10px;
+}
+.farmer-introuduction-font{
+	font-size: 18px;
+}
+.table>tbody>tr.warning>td{
+	background-color: #fff !important;
+}
+.table>tbody>tr.danger>td{
+	background-color: #DFF0D8;
+}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+{% block select1 %}
+class="active"
+{% endblock select1%}
+
+{% block content %}
+	<div class="row">
+		{% for item in context %}
+			<div class="col-md-4">
+				<div class="thumbnail">
+					{% if item.特色圖片 %}
+						<img class = "home_page" alt="200x200" src="/static/images/{{item.特色圖片}}">
+					{% else %}
+						<img class = "home_page" alt="200x200" src="/static/images/104/05/600px-Red_x.svg.png">
+					{% endif %}
+					<div class="caption">
+					<div>
+						<h3 style="width:270px; float:left">
+						{{ item.名稱 }}
+						</h3>
+						<div class = "produce-status" style="color:{{item.狀態顏色}};">{{ item.狀態 }}</div>
+						</div>
+						<p style="clear:both ">
+							{{ item.內容 }}
+						</p>
+						<p>
+							<a class="btn btn-primary" href="product_introduction/{{ item.ID }}">我想看</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	
+
+{% endblock content %}

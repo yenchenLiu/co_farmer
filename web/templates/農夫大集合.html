@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block select2 %}
+	class="active"
+{% endblock select2%}
+{% block content %}
+	<h1 class="text-left text-success">
+	農夫大集合
+	</h1>
+	<div class="row clearfix">
+		{% for item in context %}
+			<div class="col-md-3 column">
+				{% if item.特色圖片 %}
+					<img class = "img-circle" src="/static/images/{{item.特色圖片}}">
+				{% else %}
+					<img class = "img-circle" src="/static/images/104/05/600px-Red_x.svg.png">
+				{% endif %}
+				
+				<h2>
+				{{ item.姓名 }}
+				</h2>
+				<p>
+					{{ item.簡介 }}
+				</p>
+				<p>
+					<a class="btn" href="farmer_introduction/{{ item.ID }}">View details »</a>
+				</p>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock content %}
